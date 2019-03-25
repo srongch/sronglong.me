@@ -98,9 +98,8 @@
 					<div class="filters">
 						<ul>
 							<li class="active" data-filter=".all">All Categories</li>
-							<li data-filter=".branding">Things 9 Work</li>
-							<li data-filter=".creative">Zlab Work</li>
-							<li data-filter=".web-design">School Project</li>
+							<li data-filter=".commercial">Commercial Work</li>
+							<li data-filter=".side">Side Projects</li>
 						</ul>
 					</div>
 				</div>
@@ -299,7 +298,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script type="text/javascript">
 		// A $( document ).ready() block.
 		$( document ).ready(function() {
-			console.log( "ready!" );
+		//	console.log( "ready!" );
 
 			$.getJSON("data/works_list.json", function (data) {
 				var items = [];
@@ -336,7 +335,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             var panelBody = "";
             $.each(list, function (key, val) {
 
-                panelBody += "<div class=\"single-work col-lg-4 col-md-6 col-sm-12 all creative wow fadeInUp\" data-wow-duration=\"2s\">";
+                panelBody += "<div class=\"single-work col-lg-4 col-md-6 col-sm-12 all "+val.project_type+ " wow fadeInUp\" data-wow-duration=\"2s\">";
                 panelBody += " <div class=\"relative\">";
                 panelBody += "<div class=\"thumb\">";
                 panelBody += "					<div class=\"overlay overlay-bg\"></div>";
@@ -346,11 +345,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                 panelBody += "<h4>"+val.project_name+"</h4>"
                 panelBody += " <div class=\"cat\">iOS Project</div>";
                 panelBody += "<\/div>";
-                panelBody += "<a class=\"overlay\" href=\"portfolio-details.html?workid="+index+"\"></a>";
+                // panelBody += "<a class=\"overlay\" href=\"portfolio-details.html?workid="+index+"\"></a>";
+                panelBody += "<a class=\"overlay\" href=\"\"></a>";
                 panelBody += "<\/div>";
                 panelBody += "<\/div>";
-                console.log(panelBody)
-                console.log($('#work'))
+           //     console.log(panelBody)
+            //    console.log($('#work'))
 
 
                 ++index

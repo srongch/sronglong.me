@@ -2,6 +2,7 @@
   "list": [
     {
       "project_name": "AnyCllet",
+      "project_type": "commercial",
       "main_image": "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/13/da/ff/13daff32-7142-6f83-873a-55502ad2e4ea/source/392x696bb.jpg",
       "images": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/13/da/ff/13daff32-7142-6f83-873a-55502ad2e4ea/source/392x696bb.jpg",
@@ -13,6 +14,7 @@
     },
     {
       "project_name": "Please Buy",
+      "project_type": "commercial",
       "main_image": "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/a4/a9/40/a4a940c5-cd3b-8525-1a25-da464d721a22/pr_source.png/0x0ss.jpg",
       "images": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/a4/a9/40/a4a940c5-cd3b-8525-1a25-da464d721a22/pr_source.png/0x0ss.jpg",
@@ -24,6 +26,7 @@
     },
     {
       "project_name": "AJ Park Shop",
+      "project_type": "commercial",
       "main_image": "https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/71/46/a9/7146a9cc-964b-5423-01dd-1832d91a6abd/source/392x696bb.jpg",
       "images": [
         "https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/71/46/a9/7146a9cc-964b-5423-01dd-1832d91a6abd/source/392x696bb.jpg",
@@ -35,6 +38,7 @@
     },
     {
       "project_name": "AJ Park",
+      "project_type": "commercial",
       "main_image": "https://is5-ssl.mzstatic.com/image/thumb/Purple118/v4/90/aa/2b/90aa2b95-43ce-a80e-9590-16d1802fe24e/source/392x696bb.jpg",
       "images": [
         "https://is5-ssl.mzstatic.com/image/thumb/Purple118/v4/90/aa/2b/90aa2b95-43ce-a80e-9590-16d1802fe24e/source/392x696bb.jpg",
@@ -47,6 +51,7 @@
 
     {
       "project_name": "Screen Booking",
+      "project_type": "commercial",
       "main_image": "https://is1-ssl.mzstatic.com/image/thumb/Purple49/v4/7b/92/94/7b92940b-bc9d-0a04-521f-e4c827d1693c/pr_source.png/0x0ss.jpg",
       "images": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple49/v4/7b/92/94/7b92940b-bc9d-0a04-521f-e4c827d1693c/pr_source.png/0x0ss.jpg",
@@ -57,6 +62,7 @@
     },
     {
       "project_name": "NaraMuseum",
+      "project_type": "commercial",
       "main_image": "https://is4-ssl.mzstatic.com/image/thumb/Purple71/v4/5e/9c/22/5e9c22c4-0b13-5ce9-afaa-1f9ba5d57fce/pr_source.jpg/230x0w.jpg",
       "images": [
         "https://is4-ssl.mzstatic.com/image/thumb/Purple71/v4/5e/9c/22/5e9c22c4-0b13-5ce9-afaa-1f9ba5d57fce/pr_source.jpg/230x0w.jpg",
@@ -68,6 +74,7 @@
     },
     {
       "project_name": "Waggle Politic",
+      "project_type": "commercial",
       "main_image": "https://is1-ssl.mzstatic.com/image/thumb/Purple49/v4/c9/11/89/c91189fa-bdaa-cdfe-4bb0-bddddf93352d/pr_source.jpg/0x0ss.jpg",
       "images": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple49/v4/c9/11/89/c91189fa-bdaa-cdfe-4bb0-bddddf93352d/pr_source.jpg/0x0ss.jpg",
@@ -79,6 +86,7 @@
     },
     {
       "project_name": "Waggle",
+      "project_type": "commercial",
       "main_image": "https://is1-ssl.mzstatic.com/image/thumb/Purple69/v4/a6/9b/ce/a69bce44-ee5c-22d0-9073-4bc37ce3ee6d/pr_source.jpg/0x0ss.jpg",
       "images": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple69/v4/a6/9b/ce/a69bce44-ee5c-22d0-9073-4bc37ce3ee6d/pr_source.jpg/0x0ss.jpg",
@@ -90,6 +98,7 @@
     },
     {
       "project_name": "Medicombine for Doctor",
+      "project_type": "commercial",
       "main_image": "https://is1-ssl.mzstatic.com/image/thumb/Purple49/v4/1f/09/ba/1f09ba5e-2a0a-568f-be8a-1ebf724e1876/mzl.lrillswe.jpg/0x0ss.jpg",
       "images": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple49/v4/1f/09/ba/1f09ba5e-2a0a-568f-be8a-1ebf724e1876/mzl.lrillswe.jpg/0x0ss.jpg",
@@ -101,6 +110,7 @@
     },
     {
       "project_name": "Medicombine",
+      "project_type": "commercial",
       "main_image": "https://is1-ssl.mzstatic.com/image/thumb/Purple69/v4/85/14/cf/8514cfde-2aff-887b-20c0-86adaa1dc524/pr_source.jpg/0x0ss.jpg",
       "images": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple69/v4/85/14/cf/8514cfde-2aff-887b-20c0-86adaa1dc524/pr_source.jpg/0x0ss.jpg",
@@ -112,6 +122,7 @@
     },
     {
       "project_name": "Medicombine",
+      "project_type": "commercial",
       "main_image": "https://is1-ssl.mzstatic.com/image/thumb/Purple49/v4/7b/92/94/7b92940b-bc9d-0a04-521f-e4c827d1693c/pr_source.png/0x0ss.jpg",
       "images": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/13/da/ff/13daff32-7142-6f83-873a-55502ad2e4ea/source/392x696bb.jpg",
@@ -123,6 +134,7 @@
     },
     {
       "project_name": "Dtalk",
+      "project_type": "commercial",
       "main_image": "https://is1-ssl.mzstatic.com/image/thumb/Purple5/v4/f3/8e/23/f38e2317-786e-d829-98ae-48a19743a9a5/pr_source.jpg/0x0ss.jpg",
       "images": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple5/v4/f3/8e/23/f38e2317-786e-d829-98ae-48a19743a9a5/pr_source.jpg/0x0ss.jpg",
