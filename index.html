@@ -300,6 +300,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		$( document ).ready(function() {
 		//	console.log( "ready!" );
 
+			$('.footer-area').hide();
+
 			$.getJSON("data/works_list.json", function (data) {
 				var items = [];
 				// $.each(data, function (key, val) {
@@ -332,9 +334,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		function createArray(list) {
 
 		    var index = 0
-            var panelBody = "";
-            $.each(list, function (key, val) {
 
+            $.each(list, function (key, val) {
+                var panelBody = "";
                 panelBody += "<div class=\"single-work col-lg-4 col-md-6 col-sm-12 all "+val.project_type+ " wow fadeInUp\" data-wow-duration=\"2s\">";
                 panelBody += " <div class=\"relative\">";
                 panelBody += "<div class=\"thumb\">";
@@ -345,17 +347,17 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                 panelBody += "<h4>"+val.project_name+"</h4>"
                 panelBody += " <div class=\"cat\">iOS Project</div>";
                 panelBody += "<\/div>";
-                // panelBody += "<a class=\"overlay\" href=\"portfolio-details.html?workid="+index+"\"></a>";
-                panelBody += "<a class=\"overlay\" href=\"\"></a>";
+                panelBody += "<a class=\"overlay\" href=\"portfolio-details.html?workid="+index+"\"></a>";
+                // panelBody += "<a class=\"overlay\" href=\"\"></a>";
                 panelBody += "<\/div>";
                 panelBody += "<\/div>";
-           //     console.log(panelBody)
-            //    console.log($('#work'))
-
+                $(panelBody).appendTo('.working');
 
                 ++index
             });
-            $(panelBody).appendTo('.working');
+
+            $('.footer-area').show();
+
 
 
         }
