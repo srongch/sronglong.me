@@ -1,2 +1,3 @@
 # sronglong.me
-Personal Website hosted on ZEIT Now
+Personal Static Website hosted on ZEIT Now
+Domain from GoDaddy
