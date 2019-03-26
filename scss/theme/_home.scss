@@ -195,6 +195,7 @@
         }
     }
     .filters-content {
+        overflow: hidden;
         .show {
             opacity: 1;
             visibility: visible;
@@ -465,7 +466,7 @@
         li {
             display: inline-block;
             a {
-                color: #ffc000;
+                color: black; !important;
                 font-size: 14px;
             }
         }

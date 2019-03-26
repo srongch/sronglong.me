@@ -2710,7 +2710,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     color: #f1cd09; }
 
 .social_details {
-  margin-top: 50px; }
+  margin-top: 20px; }
   @media (max-width: 480px) {
     .social_details {
       margin-top: 20px; } }
@@ -2718,7 +2718,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     display: inline-block;
     margin-right: 14px; }
     .social_details li a {
-      font-size: 14px; }
+      font-size: 30px; }
       .social_details li a i {
         color: #000 !important; }
         .social_details li a i:hover {

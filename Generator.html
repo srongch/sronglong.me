@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script src="js/vendor/jquery-2.2.4.min.js"></script>
+<script type="text/javascript">
+    // A $( document ).ready() block.
+    $( document ).ready(function() {
+
+        $.getJSON("data/works_list.json", function (data) {
+            var items = [];
+
+            createArray(data.list)
+
+        });
+
+    });
+
+    function createArray(list) {
+
+        var index = 0
+        var panelBody = "";
+        $.each(list, function (key, val) {
+
+            panelBody += "<div class=\"single-work col-lg-4 col-md-6 col-sm-12 all "+val.project_type+ "\" >";
+            panelBody += " <div class=\"relative\">";
+            panelBody += "<div class=\"thumb\">";
+            panelBody += "					<div class=\"overlay overlay-bg\"></div>";
+            panelBody += "  <img class=\"image img-fluid\" src=\"" +val.main_image+ "\" alt=\"\">";
+            panelBody += " <\/div>";
+            panelBody += "<div class=\"middle\">"
+            panelBody += "<h4>"+val.project_name+"</h4>"
+            panelBody += " <div class=\"cat\">iOS Project</div>";
+            panelBody += "<\/div>";
+            panelBody += "<a class=\"overlay\" href=\"portfolio-details.html?workid="+index+"\"></a>";
+            // panelBody += "<a class=\"overlay\" href=\"\"></a>";
+            panelBody += "<\/div>";
+            panelBody += "<\/div>";
+
+            ++index
+        });
+        console.log(panelBody)
+    }
+
+
+</script>

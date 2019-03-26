@@ -102,15 +102,35 @@
                     margin-bottom: 0px;
                 }
                 i {
-                    color: #f1cd09;
+                    color: black !important;
                 }
             }
         }
     }
 }
 
+.link_details {
+
+    li {
+        //display: inline-block;
+        //margin-right: 14px;
+        a {
+            font-size: 14px;
+            i {
+                color: $black !important;
+                &:hover {
+                    color: $primary-color !important;
+                }
+            }
+        }
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}
+
 .social_details {
-    margin-top: 50px;
+    margin-top: 20px;
     @media(max-width: 480px) {
         margin-top: 20px;
     }
@@ -118,7 +138,7 @@
         display: inline-block;
         margin-right: 14px;
         a {
-            font-size: 14px;
+            font-size: 30px;
             i {
                 color: $black !important;
                 &:hover {
