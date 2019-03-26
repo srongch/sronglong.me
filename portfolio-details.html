@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx" class="no-js">
+<html lang="en" class="no-js">
 
 <head>
 	<!-- Mobile Specific Meta -->
@@ -35,38 +35,6 @@
 
 <body>
 
-	<!-- Start Header Area -->
-	<!-- <header id="header" class="dark">
-		<div class="container main-menu">
-			<div class="row align-items-center d-flex">
-				<div id="logo">
-					<a href="index.html"><img src="img/logo2.png" alt="" title="" /></a>
-				</div>
-				<nav id="nav-menu-container" class="ml-auto">
-					<ul class="nav-menu white">
-						<li class=""><a href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="portfolio.html">Portfolio</a></li>
-						<li class="menu-has-children"><a class="active" href="#">Pages</a>
-							<ul class="dark">
-								<li><a href="elements.html">Elements</a></li>
-								<li><a href="contact.html">Contact</a></li>
-								<li><a href="services.html">Service</a></li>
-								<li><a class="active" href="portfolio-details.html">Portfolio Details</a></li>
-							</ul>
-						</li>
-						<li class="menu-has-children"><a href="">Blog</a>
-							<ul class="dark">
-								<li><a href="blog-home.html">Blog Home</a></li>
-								<li><a href="blog-single.html">Blog Single</a></li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</header> -->
-	<!-- End Header Area -->
 
 	<!-- start banner Area -->
 	<section class="banner-area relative">
@@ -94,30 +62,25 @@
 				<div class="row">
 					<div class="col-md-6"style="height: 630px;">
 						<div class="left_img slide ">
-							<!-- <img class="img-fluid" src="img/work/pleasebuy/main.jpg" alt="">
-							<img class="img-fluid" src="img/work/pleasebuy/main.jpg" alt=""> -->
 							<ul class="working" style="align-items: center;">
-								<!--<li style="background-color: blue"><img class="img-fluid" src="img/work/medicombine/0x0ss-9.jpg" alt="" style="height: 100%;background-color: brown"></li>-->
-								<!--<li><img class="img-fluid" src="img/work/pleasebuy/0x0ss-5.jpg" alt="" style="height: 100%;background-color: brown"></li>-->
-								<!--<li><img class="img-fluid" src="img/work/pleasebuy/0x0ss-3.jpg" alt="" style="height: 100%;background-color: brown"></li>-->
 							  </ul>
 						</div>
 					</div>
 					<div class="offset-md-1 col-md-5">
 						<div class="portfolio_right_text mt-30">
-							<h4>Lavendar ambient colorlib</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-								magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+							<h4 id="work_title"></h4>
+							<p id="description"></p>
 							<ul class="list">
 
-								<li><span>Platform</span>: Android</li>
-								<li><span>Language</span>: Objective-C</li>
-								<li><span>Components</span>: Objective-C</li>
-								<li><span>Duration</span>: 17 Aug 2018</li>
+								<li  id="platform"></li>
+								<li id="language"> </li>
+								<li id="components"></li>
+								<li id="duration"></li>
 							</ul>
 							<ul class="list social_details">
-								<li><a href="#"><i class="fa fa-github"></i></a></li>
-								<li>No longer in the appstore</li>
+								<li id="store_link_1" class="store_link"><span>Link :</span> </li>
+								<li id="store_link" class="store_link"></li>
+								<li id="no_link" style="margin-top: 10px;color: red" >No longer in the appstore</li>
 							</ul>
 						</div>
 					</div>
@@ -139,7 +102,7 @@
 			<div class="row footer-bottom justify-content-center">
 				<p class="col-lg-8 col-sm-12 footer-text">
 					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+ This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 			</div>
 		</div>
@@ -195,11 +158,17 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             var querystring =  getParameterByName("workid");
             if (querystring !== undefined) {
                 $.getJSON("data/works_list.json", function (data) {
-                    var items = data.list[querystring].images;
+                    var items = data.list[querystring];
                     console.log("image is " + JSON.stringify(items));
+					$('#work_title').text(items.project_name);
+                    $('#description').text(items.project_desc);
+                    $('#platform').append("<span>Platform</span>: "+items.platform+" ");
+					$('#language').append("<span>Language</span>: "+items.language+" ");
+                    $('#components').append("<span>Components</span>: "+items.components+" ");
+                    $('#duration').append("<span>Duration</span>: "+items.duration+" ");
+					setupStoreLink(items)
 
-
-                    $.each(items, function (key, val) {
+                    $.each(items.images, function (key, val) {
                         console.log("value is " + val);
                         var panelBody = "";
                         panelBody += "<li style=\"background-color: blue\"><img class=\"img-fluid\" src=\""+val+"\" style=\"height: 100%;background-color: brown\"></li>"
@@ -217,8 +186,20 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                 });
 			}
 
+            function setupStoreLink(data) {
+                if (data.store_link ==='no_link' || data.store_link === undefined) {
+					$('.store_link').hide();
+					$('#no_link').text("* App no longer available on the store.");
+				}else {
+                    $('.store_link').show();
+                    $('#no_link').hide();
 
+                    $('#store_link').append("<a href=\""+data.store_link+"\"><i class=\""+data.store_type_class+"\"></i></a>")
+				}
+            }
 
+        // <a href="#"><i class="fa fa-github"></i></a>
+        //     store_type_class
 
 
 

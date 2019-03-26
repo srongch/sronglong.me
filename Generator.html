@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-
+<div class="text" style="font-family: 'Apple Symbols'"></div>
 </body>
 </html>
 <script src="js/vendor/jquery-2.2.4.min.js"></script>
@@ -15,7 +15,7 @@
 
         $.getJSON("data/works_list.json", function (data) {
             var items = [];
-
+            console.log(data.list)
             createArray(data.list)
 
         });
@@ -28,7 +28,7 @@
         var panelBody = "";
         $.each(list, function (key, val) {
 
-            panelBody += "<div class=\"single-work col-lg-4 col-md-6 col-sm-12 all "+val.project_type+ "\" >";
+            panelBody += "<div class=\"single-work col-lg-3 col-md-5 col-sm-11 all "+val.project_type+ "\" >";
             panelBody += " <div class=\"relative\">";
             panelBody += "<div class=\"thumb\">";
             panelBody += "					<div class=\"overlay overlay-bg\"></div>";
@@ -36,7 +36,7 @@
             panelBody += " <\/div>";
             panelBody += "<div class=\"middle\">"
             panelBody += "<h4>"+val.project_name+"</h4>"
-            panelBody += " <div class=\"cat\">iOS Project</div>";
+            panelBody += " <div class=\"cat\">"+val.platform+"</div>";
             panelBody += "<\/div>";
             panelBody += "<a class=\"overlay\" href=\"portfolio-details.html?workid="+index+"\"></a>";
             // panelBody += "<a class=\"overlay\" href=\"\"></a>";
@@ -45,7 +45,8 @@
 
             ++index
         });
-        console.log(panelBody)
+     //   console.log(panelBody)
+        $('.text').text(panelBody)
     }
 
 

@@ -2162,7 +2162,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     .banner-content .designation .designer {
       color: #e45447; }
     .banner-content .designation .developer {
-      color: #90acd1; }
+      color: #777777; }
 
 .banner-img {
   text-align: right;
@@ -2284,10 +2284,10 @@ body.mobile-nav-active #mobile-nav-toggle {
     width: 100%; }
 
 .single-work {
-  border-radius: 5px;
+  border-radius: 10px;
   margin-bottom: 30px; }
   .single-work .thumb .overlay-bg {
-    background: #e45447;
+    background: grey;
     opacity: 0;
     border-radius: 5px;
     -webkit-transition: all 0.3s ease 0s;
@@ -3395,5 +3395,22 @@ body.mobile-nav-active #mobile-nav-toggle {
       margin-bottom: 0; }
     .footer-area .footer-bottom a {
       color: #e45447; }
+
+.header-social{
+  margin-top: 10px;
+}
+.header-social a i {
+  padding-right: 4px;
+  color: #90acd1;
+  font-size: 25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s; }
+@media (max-width: 576px) {
+  .header-social a i {
+    font-size: 25px; } }
+  .header-social a i:hover {
+  color: #e45447; }
 
 /*# sourceMappingURL=main.css.map */

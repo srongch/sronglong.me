@@ -3,6 +3,13 @@
     {
       "project_name": "AnyCllet",
       "project_type": "commercial",
+      "platform": "iOS Project",
+      "project_desc": "commercial",
+      "language" : "Objective-C",
+      "duration" : "2016-43 ~ 2016.4",
+      "components" : "Afterd dfgdfg fdg  dfgdf dgfd gdgdfgdf gfdfdgfd gfg fg fd gdfg dfgdfg dfg dfg fddg",
+      "store_link" : "https://itunes.apple.com/us/app/anycllet/id1273536767?mt=8",
+      "store_type_class" : "fa fa-github",
       "main_image": "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/13/da/ff/13daff32-7142-6f83-873a-55502ad2e4ea/source/392x696bb.jpg",
       "images": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/13/da/ff/13daff32-7142-6f83-873a-55502ad2e4ea/source/392x696bb.jpg",
@@ -15,6 +22,8 @@
     {
       "project_name": "Please Buy",
       "project_type": "commercial",
+      "platform": "iOS Project",
+      "project_desc": "commercial",
       "main_image": "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/a4/a9/40/a4a940c5-cd3b-8525-1a25-da464d721a22/pr_source.png/0x0ss.jpg",
       "images": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/a4/a9/40/a4a940c5-cd3b-8525-1a25-da464d721a22/pr_source.png/0x0ss.jpg",
@@ -27,6 +36,8 @@
     {
       "project_name": "AJ Park Parking Lot",
       "project_type": "commercial",
+      "platform": "iOS Project",
+      "project_desc": "commercial",
       "main_image":
       "https://is5-ssl.mzstatic.com/image/thumb/Purple111/v4/82/ab/11/82ab11b3-e842-fc76-ca86-8ccef8b8bdaf/source/392x696bb.jpg",
       "images": [
@@ -38,8 +49,10 @@
       ]
     },
     {
-      "project_name": "Nara Museum",
+      "project_name": "Paper Museum",
       "project_type": "commercial",
+      "platform": "iOS Project",
+      "project_desc": "commercial",
       "main_image": "https://is4-ssl.mzstatic.com/image/thumb/Purple71/v4/5e/9c/22/5e9c22c4-0b13-5ce9-afaa-1f9ba5d57fce/pr_source.jpg/230x0w.jpg",
       "images": [
         "https://is4-ssl.mzstatic.com/image/thumb/Purple71/v4/5e/9c/22/5e9c22c4-0b13-5ce9-afaa-1f9ba5d57fce/pr_source.jpg/230x0w.jpg",
@@ -52,6 +65,8 @@
     {
       "project_name": "Let's Sport",
       "project_type": "side",
+      "platform": "iOS Project",
+      "project_desc": "commercial",
       "main_image": "https://firebasestorage.googleapis.com/v0/b/personal-2d8ab.appspot.com/o/home%20page.png?alt=media&token=76201dbd-3524-4678-91ab-8ec2b22ca8e8",
       "images": [
         "https://firebasestorage.googleapis.com/v0/b/personal-2d8ab.appspot.com/o/home%20page.png?alt=media&token=76201dbd-3524-4678-91ab-8ec2b22ca8e8",
@@ -64,6 +79,8 @@
     {
       "project_name": "Together",
       "project_type": "side",
+      "platform": "Android Project",
+      "project_desc": "commercial",
       "main_image": "https://firebasestorage.googleapis.com/v0/b/personal-2d8ab.appspot.com/o/3.png?alt=media&token=02626f5d-07a5-4202-a0a0-06900261c486",
       "images": [
         "https://firebasestorage.googleapis.com/v0/b/personal-2d8ab.appspot.com/o/1.png?alt=media&token=d47942c8-1747-40ce-b77a-7b07ac088b00",
@@ -80,6 +97,8 @@
     {
       "project_name": "Rice Retailor",
       "project_type": "side",
+      "platform": "React-Native Project",
+      "project_desc": "commercial",
       "main_image": "https://firebasestorage.googleapis.com/v0/b/personal-2d8ab.appspot.com/o/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202019-03-26%20at%2001.32.34.png?alt=media&token=60b10856-7a34-4cfa-8ac0-0ca8697f38ec",
       "images": [
         "https://firebasestorage.googleapis.com/v0/b/personal-2d8ab.appspot.com/o/Simulator%20Screen%20Shot%20-%20iPhone%208%20Plus%20-%202019-03-26%20at%2001.32.34.png?alt=media&token=60b10856-7a34-4cfa-8ac0-0ca8697f38ec",
@@ -93,6 +112,8 @@
     {
       "project_name": "Screen Booking",
       "project_type": "commercial",
+      "platform": "iOS Project",
+      "project_desc": "commercial",
       "main_image": "https://is1-ssl.mzstatic.com/image/thumb/Purple69/v4/bc/e8/ea/bce8ea2c-76ec-d9e6-c583-4499d5210268/pr_source.png/0x0ss.jpg",
       "images": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple49/v4/7b/92/94/7b92940b-bc9d-0a04-521f-e4c827d1693c/pr_source.png/0x0ss.jpg",
@@ -105,6 +126,8 @@
     {
       "project_name": "Waggle",
       "project_type": "commercial",
+      "platform": "iOS Project",
+      "project_desc": "commercial",
       "main_image": "https://is1-ssl.mzstatic.com/image/thumb/Purple69/v4/a6/9b/ce/a69bce44-ee5c-22d0-9073-4bc37ce3ee6d/pr_source.jpg/0x0ss.jpg",
       "images": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple69/v4/a6/9b/ce/a69bce44-ee5c-22d0-9073-4bc37ce3ee6d/pr_source.jpg/0x0ss.jpg",
@@ -117,6 +140,8 @@
     {
       "project_name": "Medicombine for Doctor",
       "project_type": "commercial",
+      "platform": "iOS Project",
+      "project_desc": "commercial",
       "main_image": "https://is1-ssl.mzstatic.com/image/thumb/Purple49/v4/84/4a/c0/844ac022-ed78-6287-6f74-2ceffb767357/mzl.ivwaiyoi.jpg/0x0ss.jpg",
       "images": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple49/v4/1f/09/ba/1f09ba5e-2a0a-568f-be8a-1ebf724e1876/mzl.lrillswe.jpg/0x0ss.jpg",
@@ -129,6 +154,8 @@
     {
       "project_name": "Medicombine",
       "project_type": "commercial",
+      "platform": "iOS Project",
+      "project_desc": "commercial",
       "main_image": "https://is1-ssl.mzstatic.com/image/thumb/Purple69/v4/85/14/cf/8514cfde-2aff-887b-20c0-86adaa1dc524/pr_source.jpg/0x0ss.jpg",
       "images": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple69/v4/85/14/cf/8514cfde-2aff-887b-20c0-86adaa1dc524/pr_source.jpg/0x0ss.jpg",
@@ -142,6 +169,8 @@
     {
       "project_name": "Dtalk",
       "project_type": "commercial",
+      "platform": "iOS Project",
+      "project_desc": "commercial",
       "main_image": "https://is1-ssl.mzstatic.com/image/thumb/Purple1/v4/1c/f0/90/1cf090cb-e5b8-e71b-d947-aad0cd7205a4/pr_source.jpg/0x0ss.jpg",
       "images": [
         "https://is1-ssl.mzstatic.com/image/thumb/Purple5/v4/f3/8e/23/f38e2317-786e-d829-98ae-48a19743a9a5/pr_source.jpg/0x0ss.jpg",
@@ -152,8 +181,22 @@
       ]
     },
     {
+      "project_name": "나이뻐?",
+      "project_type": "commercial",
+      "platform": "iOS Project",
+      "project_desc": "commercial",
+      "main_image":  "https://lh3.googleusercontent.com/LV82IP-ps3pGXR8vH62xkokX9K4LbV0QIQmLCEPGEofCFDtI3-oO3f-VNHEn5aBTMzuk=h610",
+      "images": [
+        "https://lh3.googleusercontent.com/LV82IP-ps3pGXR8vH62xkokX9K4LbV0QIQmLCEPGEofCFDtI3-oO3f-VNHEn5aBTMzuk=h610",
+        "https://lh3.googleusercontent.com/nccO75iRLb55zcZ6wPjb6947PewThKDcNjB5UlU-tllPHnlUqJky7s6GYKph9eGGLQ=h610",
+        "https://lh3.googleusercontent.com/qPyU7W4h7YTLi0msw4RvSWwYmh4g7m85ZpqLdvYQNMWRN76rUNn4NCqry_ceCkh0Z9g=h610"
+      ]
+    },
+    {
       "project_name": "Stagram",
       "project_type": "commercial",
+      "platform": "iOS Project",
+      "project_desc": "commercial",
       "main_image": "https://lh3.googleusercontent.com/tAf4P2Hh3_DX77NLljkWn0_0PrfCrw4_X__2sK74lVYE9lwQas1aA5-euSozYq0HPNkm=h610",
       "images": [
         "https://lh3.googleusercontent.com/i22eHcQK0ymKY5wsSZDnyqkHX-v8lPtKUiQ12XJ6ACIbs1enrgjnW-m-U9rjYZx5gb26=h610",
@@ -161,16 +204,6 @@
         "https://lh3.googleusercontent.com/UC2f0N7weyKP4U8SHgWSslzkqBycnVoMA1lsDwkaThQbxKjb8hdQh6AbXYXOy2vYIw=h610",
         "https://lh3.googleusercontent.com/VlTSw44mgHNNyaNZMeUx1GW8GsI4v2yjcdgb_8FCIxDBoybR3VLDtqeOGcLUlpezu_s=h610",
         "https://lh3.googleusercontent.com/2J_9mBW9HcYJ6hbFF87qKPMcLz0pwVZ3AZT2HUq1xrdrGhirCuqyuVmYet55bh8i-AMK=h610"
-      ]
-    },
-    {
-      "project_name": "나이뻐?",
-      "project_type": "commercial",
-      "main_image":  "https://lh3.googleusercontent.com/LV82IP-ps3pGXR8vH62xkokX9K4LbV0QIQmLCEPGEofCFDtI3-oO3f-VNHEn5aBTMzuk=h610",
-      "images": [
-        "https://lh3.googleusercontent.com/LV82IP-ps3pGXR8vH62xkokX9K4LbV0QIQmLCEPGEofCFDtI3-oO3f-VNHEn5aBTMzuk=h610",
-        "https://lh3.googleusercontent.com/nccO75iRLb55zcZ6wPjb6947PewThKDcNjB5UlU-tllPHnlUqJky7s6GYKph9eGGLQ=h610",
-        "https://lh3.googleusercontent.com/qPyU7W4h7YTLi0msw4RvSWwYmh4g7m85ZpqLdvYQNMWRN76rUNn4NCqry_ceCkh0Z9g=h610"
       ]
     }
   ]
