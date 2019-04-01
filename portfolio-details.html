@@ -43,12 +43,19 @@
 				<div class="about-content col-lg-12">
 					
 					<p class="link-nav">
-							<span class="box">
+						<span class="box left_button">
+								<a href="#" id="left_button" class="fa fa-arrow-left"></a>
+						</span>
+						<span class="box">
 								<a href="index.html">Home </a>
+						</span>
+						<span class="box right_button">
+							<a href="#" id="right_button" class="fa fa-arrow-right"> </a>
 						</span>
 						<h1 class="text-white" style="margin-top: 10px">
 								Portfolio Details
 							</h1>
+
 				</div>
 			</div>
 		</div>
@@ -91,7 +98,6 @@
 	</section>
 	<!-- End Portfolio Details Area -->
 
-	
 
 	<!-- start footer Area -->
 	<footer class="footer-area">
@@ -140,6 +146,30 @@
 	<script type="text/javascript">
 		$(function() {
 
+            var querystring =  getParameterByName("workid");
+
+            if (querystring == 0){
+                $('.left_button').hide()
+			}else if(querystring == 13) {
+                $('.right_button').hide()
+			}
+
+		    $('#left_button').click(function() {
+               console.log("left_click on work :",querystring)
+				if (querystring > 0){
+                    location.href  = 'portfolio-details.html?workid='+(parseInt(querystring)-1);
+				}
+
+            });
+
+            $('#right_button').click(function() {
+                console.log("left_click")
+                if (querystring < 14 ){
+                    location.href  = 'portfolio-details.html?workid='+(parseInt(querystring)+1);
+                }
+            });
+
+
 		    function getParameterByName( name ){
                 var regexS = "[\\?&]"+name+"=([^&#]*)",
                     regex = new RegExp( regexS ),
@@ -155,7 +185,6 @@
 
             console.log( getParameterByName("workid") );
 
-            var querystring =  getParameterByName("workid");
             if (querystring !== undefined) {
                 $.getJSON("data/works_list.json", function (data) {
                     var items = data.list[querystring];
