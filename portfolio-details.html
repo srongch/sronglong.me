@@ -123,7 +123,8 @@
 	</div>
 	<!-- ####################### End Scroll to Top Area ####################### -->
 
-	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<!--<script src="js/vendor/jquery-2.2.4.min.js"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
 	 crossorigin="anonymous"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
@@ -147,6 +148,10 @@
 		$(function() {
 
             var querystring =  getParameterByName("workid");
+            if (isNumeric(querystring)){
+                querystring = 0
+			}
+
 
             if (querystring == 0){
                 $('.left_button').hide()
@@ -155,7 +160,7 @@
 			}
 
 		    $('#left_button').click(function() {
-               console.log("left_click on work :",querystring)
+           //    console.log("left_click on work :",querystring)
 				if (querystring > 0){
                     location.href  = 'portfolio-details.html?workid='+(parseInt(querystring)-1);
 				}
@@ -163,7 +168,7 @@
             });
 
             $('#right_button').click(function() {
-                console.log("left_click")
+            //    console.log("left_click")
                 if (querystring < 14 ){
                     location.href  = 'portfolio-details.html?workid='+(parseInt(querystring)+1);
                 }
@@ -181,14 +186,18 @@
                 }
             }
 
-            console.log( "ready!" );
+            function isNumeric(num){
+                return !isNaN(num)
+            }
 
-            console.log( getParameterByName("workid") );
+            // console.log( "ready!" );
+			//
+            // console.log( getParameterByName("workid") );
 
             if (querystring !== undefined) {
                 $.getJSON("data/works_list.json", function (data) {
                     var items = data.list[querystring];
-                    console.log("image is " + JSON.stringify(items));
+                 //   console.log("image is " + JSON.stringify(items));
 					$('#work_title').text(items.project_name);
                     $('#description').text(items.project_desc);
                     $('#platform').append("<span>Platform</span>: "+items.platform+" ");
@@ -198,10 +207,10 @@
 					setupStoreLink(items)
 
                     $.each(items.images, function (key, val) {
-                        console.log("value is " + val);
+                       // console.log("value is " + val);
                         var panelBody = "";
                         panelBody += "<li style=\"background-color: blue\"><img class=\"img-fluid\" src=\""+val+"\" style=\"height: 100%;background-color: brown\"></li>"
-						console.log(panelBody)
+						//console.log(panelBody)
                         $(panelBody).appendTo('.working');
                     })
 
