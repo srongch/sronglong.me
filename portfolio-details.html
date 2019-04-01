@@ -126,8 +126,8 @@
 	</div>
 	<!-- ####################### End Scroll to Top Area ####################### -->
 
-	<!--<script src="js/vendor/jquery-2.2.4.min.js"></script>-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" />
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" />-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
 	 crossorigin="anonymous"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
@@ -151,10 +151,12 @@
 		$(function() {
 
             var querystring =  getParameterByName("workid");
-            if (isNumeric(querystring)){
-                querystring = 0
+
+            if (isNaN(querystring)) { // is not number
+                querystring = 0;
 			}
 
+         //   console.log("workid : " + isNaN(querystring))
 
             if (querystring == 0){
                 $('.left_button').hide()
@@ -164,15 +166,15 @@
 
 		    $('#left_button').click(function() {
            //    console.log("left_click on work :",querystring)
-				if (querystring > 0){
+				if (parseInt(querystring) > 0){
                     location.href  = 'portfolio-details.html?workid='+(parseInt(querystring)-1);
 				}
 
             });
 
             $('#right_button').click(function() {
-            //    console.log("left_click")
-                if (querystring < 14 ){
+               console.log("right_click")
+                if (parseInt(querystring) < 14 ){
                     location.href  = 'portfolio-details.html?workid='+(parseInt(querystring)+1);
                 }
             });
@@ -189,9 +191,6 @@
                 }
             }
 
-            function isNumeric(num){
-                return !isNaN(num)
-            }
 
             // console.log( "ready!" );
 			//
