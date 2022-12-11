@@ -15,15 +15,14 @@
 
         $.getJSON("data/works_list.json", function (data) {
             var items = [];
-          //  console.log(data.list)
-          //  createArray(data.list)
+           console.log(data.list)
+           createArray(data.list)
 
         });
 
     });
 
     function createArray(list) {
-
         var index = 0
         var panelBody = "";
         $.each(list, function (key, val) {

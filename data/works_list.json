@@ -1,6 +1,55 @@
 {
   "list": [
     {
+      "project_name": "THORYield",
+      "project_type": "commercial",
+      "platform": "Flutter Project",
+      "project_desc": "Aim to develop the best yield tracking app for THORChain users. (Currently, the most used yield tracking app)",
+      "language" : "Dart",
+      "duration" : "05-2020 ~ present",
+      "components" : "Flutter, Dart, Riverpod, Hive, SQLLite, and Freezed.",
+      "store_link" : "https://thoryield.com/#in-pocket-content",
+      "store_type_class" : "fa fa-apple",
+      "main_image": "https://is4-ssl.mzstatic.com/image/thumb/PurpleSource122/v4/3a/e5/0e/3ae50e5f-c9e3-2a6f-61e5-f137f894c0c4/fdca1a0b-f900-423b-85b6-1393b5594d39_1@2x.jpg/1242x2688bb.png",
+      "images": [
+        "https://is5-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/2b/d9/33/2bd93351-7c88-277c-bd7e-e6a624fca998/f4888956-e96f-4504-9a7d-c3d77b5e6b99_2@2x.jpg/1242x2688bb.png",
+        "https://is4-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/f0/35/9d/f0359dfb-06f1-4dc6-c74a-aaafecd41a65/d0c50c65-eef1-43a3-a030-f5a0b996c17b_3@2x.jpg/1242x2688bb.png"
+      ]
+    },
+    {
+      "project_name": "eHive",
+      "project_type": "commercial",
+      "platform": "iOS Project",
+      "project_desc": "Aim to support digital health research studies at the Mount Sinai Health System in NYC by allowing patients to fill out daily task questionnaires and complete active tasks directly via the app.",
+      "language" : "Swift",
+      "duration" : "07-2020 ~ 10-2022",
+      "components" : "Fastlane, CocoaPods, Firebase, Combine, SwiftUI",
+      "store_link" : "https://apps.apple.com/us/app/ehive-studies/id1536952138",
+      "store_type_class" : "fa fa-apple",
+      "main_image": "https://firebasestorage.googleapis.com/v0/b/personal-2d8ab.appspot.com/o/ehive%2FSimulator%20Screen%20Shot%20-%20iPhone%2013%20Pro%20-%202021-12-01%20at%2015.31.38.png?alt=media&token=44a512b3-ec29-45a2-ad85-0ccc3b39fbbc",
+      "images": [
+        "https://firebasestorage.googleapis.com/v0/b/personal-2d8ab.appspot.com/o/ehive%2FSimulator%20Screen%20Shot%20-%20iPhone%2013%20Pro%20-%202021-12-01%20at%2015.32.26.png?alt=media&token=a97018a3-0a8a-4d8e-bdc5-a6672cb129a3",
+        "https://firebasestorage.googleapis.com/v0/b/personal-2d8ab.appspot.com/o/ehive%2FSimulator%20Screen%20Shot%20-%20iPhone%2013%20Pro%20-%202021-12-01%20at%2015.46.49.png?alt=media&token=a1bffe72-fb05-48bd-a5c8-14df9f893cc3",
+        "https://firebasestorage.googleapis.com/v0/b/personal-2d8ab.appspot.com/o/ehive%2FSimulator%20Screen%20Shot%20-%20iPhone%2013%20Pro%20-%202021-12-01%20at%2015.49.47.png?alt=media&token=d720fb88-95e7-4287-b56c-39ac034060a0"
+      ]
+    },
+    {
+      "project_name": "LabRes",
+      "project_type": "commercial",
+      "platform": "iOS Project",
+      "project_desc": "Aim to aid hospital during the peak of Covid infection to send test results to patients via the App. (Reached among top 200 apps in the App store few weeks after release)",
+      "language" : "Swift",
+      "duration" : "05-2020 ~ 07-2020",
+      "components" : "Fastlane, CocoaPods, Firebase, Swift, UIKit",
+      "store_link" : "https://apps.apple.com/de/app/labres/id1514762802",
+      "store_type_class" : "fa fa-apple",
+      "main_image": "https://is4-ssl.mzstatic.com/image/thumb/PurpleSource113/v4/4f/ac/8e/4fac8e06-2bfc-608d-9a01-7d07eab13d65/768006fe-0ad0-4fc0-ba29-074666abd3d7_iPhone_11_Pro_Max-list_page.png/1242x2688bb.png",
+      "images": [
+        "https://is4-ssl.mzstatic.com/image/thumb/PurpleSource123/v4/9b/a1/96/9ba19608-c41c-1d33-3acc-1c3a7b16207e/661a1dee-c6b1-4a51-a8f9-deebca681083_iPhone_11_Pro_Max-step2_page.png/1242x2688bb.png",
+        "https://is5-ssl.mzstatic.com/image/thumb/PurpleSource123/v4/19/f9/f7/19f9f7be-447d-de74-3f47-fe59210463f2/b3117e48-e0f5-42e5-9a00-5bac2906b5c8_iPhone_11_Pro_Max-negative_result_page.png/1242x2688bb.png"
+      ]
+    },
+    {
       "project_name": "AnyCllet",
       "project_type": "commercial",
       "platform": "iOS Project",
